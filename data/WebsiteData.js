@@ -3,7 +3,7 @@ const WebsiteData = {
     {
       id: "1",
       name: "ResumeScorer (AI Powered)",
-      image: "images/resume-scorer.jpg",
+      image: "images/resume-scorer.jpeg",
       projectLink: "https://github.com/Milan-Gadhiya/ResumeScorer",
       description:
         "AI-powered serverless application for resume evaluation, delivering accuracy and optimization recommendations using cloud AI services.",

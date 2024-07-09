@@ -5,13 +5,13 @@ import WebsiteData from "../data/WebsiteData.js";
 
 const websiteRouter = express.Router();
 
-// websiteRouter.get(
-//   "/seed",
-//   expressAsyncHandler(async (req, res) => {
-//     const createwebsites = await Websites.insertMany(WebsiteData.websites);
-//     res.send({ createwebsites });
-//   })
-// );
+websiteRouter.get(
+  "/seed",
+  expressAsyncHandler(async (req, res) => {
+    const createwebsites = await Websites.insertMany(WebsiteData.websites);
+    res.send({ createwebsites });
+  })
+);
 
 // websiteRouter.get(
 //     "/",

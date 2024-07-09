@@ -12,6 +12,7 @@ app.use("/api/apps", appsRouter);
 // WEBSITE ROUTER
 app.use("/api/websites", websiteRouter);
 
+// ALL INITIAL DATA
 app.use("/api/", allDataRouter);
 
 //MIDDLEWARE
@@ -23,6 +24,7 @@ app.get('/', (req, res) =>{
     res.send("Server is Ready Milla")
 })
 
-app.listen("https://portfoliobackend-fchc.onrender.com",()=>{
-    console.log("Server at https://portfoliobackend-fchc.onrender.com");
-})
+const PORT = 1000;
+app.listen(PORT, () => {
+  console.log(`Server is running on http://localhost:${PORT}`);
+});
